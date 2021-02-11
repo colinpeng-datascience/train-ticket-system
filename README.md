@@ -3,7 +3,7 @@ This repository contains the online bus ticket booking system I have built on th
 
 My works are the following :
 
-STAGE 1~3
+Most of STAGE 1~3
 
 STAGE 4  
 The whole database and stored procedures contains in Data_Base.sql  
