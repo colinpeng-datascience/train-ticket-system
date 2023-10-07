@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	      <!-- Bootstrap -->
+<link href="bootstrap-4.4.1.css" rel="stylesheet">
+  <head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MIS BUS</title>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="search.html">Tickets</a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="stations.html">Stations</a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="timetable.html">TimeTable</a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="admin.html">Admin</a>
+             </li>
+			  
+          </ul>
+       </div>
+    </nav>
+
+  <div class="jumbotron jumbotron-fluid text-center">
+       <h1 class="display-4">NCU MIS BUS COMPANY&nbsp;</h1>
+       <p class="lead">Welcome to our station page, here are our stations.</p>
+       <hr class="my-4"> 
+	  
+
+	    <table class="table" id="table">
+  <thead class="thead-dark">
+    <tr>
+
+      <th scope="col">ID</th>
+      <th scope="col">Station</th>
+      <th scope="col">Location Marker</th>
+	  <th scope="col">Time Marker</th>
+
+	  </tr>
+  </thead>
+  <tbody>
+	  		<tr><td>1</td><td>Taipei</td><td>1</td><td>0</td></tr>
+		<tr><td>2</td><td>Taoyuan</td><td>3</td><td>20</td></tr>
+		<tr><td>3</td><td>Hsinchu</td><td>4</td><td>30</td></tr>
+		<tr><td>4</td><td>Taichung</td><td>8</td><td>60</td></tr>
+		<tr><td>5</td><td>Kaohsiung</td><td>15</td><td>120</td></tr>
+	  
+  </tbody>
+  
+</table>
+	  <hr size = "30">
+	  <p><b>Price formula : </b>| (departure_location_marker) - (arrival_location_marker) | x 100 <br>
+		  <b>Example : </b> The price for Taipei to Taichung is (8-1)*100=$700
+	  </p>
+	  
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+
+</html>
