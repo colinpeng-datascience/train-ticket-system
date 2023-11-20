@@ -5,7 +5,7 @@ This repository contains the implementation of an online train ticket booking sy
 ## Table of Contents
 
 - [Requirements](#requirements)
-- [Tech Stack](#tech-stack)
+- [Technology Stack](#technology-stack)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Documentation](#documentation)
@@ -17,13 +17,16 @@ This repository contains the implementation of an online train ticket booking sy
 
 Look into the `docs/` directory for detailed requirement, analysis, and design documents written in Traditional Chinese.
 
-## Tech Stack
+## Technology Stack
 
-The project is built using the following technologies:
+The project utilizes the following technologies:
 
 - **Frontend:** HTML
 - **Backend:** Java
-- **Database:** SQL (see `Data_Base.sql` for database and stored procedures)
+- **Web Framework:** Jakarta Servlet (Apache Tomcat)
+- **Database:** MySQL
+- **Database Access:** JDBC
+- **Design Pattern:** MVC (Model-View-Controller)
 
 ## Installation
 
@@ -64,4 +67,4 @@ This project is licensed under the [MIT License](LICENSE.md).
 
 ## Acknowledgements
 
-Special thanks to Professor Tsu for guidance during the Systems Analysis and Design course.
+Special thanks to Professor Tsu and the TAs for guidance during the Systems Analysis and Design course.
