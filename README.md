@@ -21,7 +21,7 @@ Look into the `docs/` directory for detailed requirement, analysis, and design d
 
 The project utilizes the following technologies:
 
-- **Frontend:** HTML
+- **Frontend:** HTML, JavaScript, CSS
 - **Backend:** Java
 - **Web Framework:** Jakarta Servlet (Apache Tomcat)
 - **Database:** MySQL
