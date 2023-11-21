@@ -21,7 +21,7 @@ Look into the `docs/` directory for detailed requirement, analysis, and design d
 
 The project utilizes the following technologies:
 
-- **Frontend:** HTML, JavaScript, CSS
+- **Frontend:** HTML, JavaScript
 - **Backend:** Java
 - **Web Framework:** Jakarta Servlet (Apache Tomcat)
 - **Database:** MySQL
@@ -43,7 +43,7 @@ The project utilizes the following technologies:
     mysql -u username -p < Data_Base.sql
     ```
 
-3. **Deploy the HTML files in the `\NCU_MIS_SA` directory to your preferred web server.**
+3. **Deploy the HTML and JavaScript files in the `\NCU_MIS_SA` directory to your preferred web server.**
 
 4. **Compile and deploy the Java controllers and objects in `\NCU_MIS_SA\WEB-INF\classes\ncu\im3069\demo\controller` and `\NCU_MIS_SA\WEB-INF\classes\ncu\im3069\demo\app` respectively.**
 
@@ -51,7 +51,7 @@ The project utilizes the following technologies:
 
 1. **Access the deployed HTML files through your web browser.**
 
-2. **Follow the provided use cases for account management, train timetable information, train management, ticket booking, and ticket management.**
+2. **Follow the provided use cases for account management, search train timetable information, train management, ticket booking, and ticket management.**
 
 ## Documentation
 
@@ -59,12 +59,12 @@ The `docs/` directory contains comprehensive documentation, including requiremen
 
 ## Contributing
 
-If you would like to contribute to the project, please follow the [contributing guidelines](CONTRIBUTING.md).
+If you would like to contribute to the project, feel free to open a PR.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md).
+This project is licensed under the MIT License.
 
 ## Acknowledgements
 
-Special thanks to Professor Tsu and the TAs for guidance during the Systems Analysis and Design course.
+Special thanks to Professor Hsu and the TAs for guidance during the Systems Analysis and Design course.
