@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	      <!-- Bootstrap -->
-<link href="bootstrap-4.4.1.css" rel="stylesheet">
+<link href="statics/css/bootstrap-4.4.1.css" rel="stylesheet">
+<script src="js/home.js"></script>
   <head>
 
 
@@ -48,33 +49,10 @@
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="statics/js/jquery-3.4.1.min.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed --> 
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="statics/js/popper.min.js"></script>
+    <script src="statics/js/bootstrap-4.4.1.js"></script>
   </body>
-  <script type="text/javascript">
-    $(document).ready(function() {
-
-  		email = localStorage.getItem("email");
-    	password = localStorage.getItem("password");
-    	
-    	if (email == null || password == null) {
-    		document.getElementById('login_btn').innerHTML = "Login";
-    		document.getElementById('login_btn').href = "login.html";
-    	}
-    	
-    	else{
-    		document.getElementById('login_btn').innerHTML = "Account Center";
-    		document.getElementById('login_btn').href = "center.html";
-    	}
-
-  		
-  	});
-  	
-  	
-  	
-
-  </script>
 </html>

@@ -4,7 +4,6 @@ This repository contains the implementation of an online train ticket booking sy
 
 ## Table of Contents
 
-- [Requirements](#requirements)
 - [Technology Stack](#technology-stack)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -13,15 +12,11 @@ This repository contains the implementation of an online train ticket booking sy
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
-## Requirements
-
-Look into the `docs/` directory for detailed requirement, analysis, and design documents written in Traditional Chinese.
-
 ## Technology Stack
 
 The project utilizes the following technologies:
 
-- **Frontend:** HTML, JavaScript
+- **Frontend:** HTML, JavaScript, CSS
 - **Backend:** Java
 - **Web Framework:** Jakarta Servlet (Apache Tomcat)
 - **Database:** MySQL
@@ -33,7 +28,7 @@ The project utilizes the following technologies:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/colinpeng-datascience/train-ticket-system.git
     ```
 
 2. **Set up the database using the provided SQL script:**
@@ -43,9 +38,9 @@ The project utilizes the following technologies:
     mysql -u username -p < Data_Base.sql
     ```
 
-3. **Deploy the HTML and JavaScript files in the `\NCU_MIS_SA` directory to your preferred web server.**
+3. **Deploy the HTML and JavaScript files in the `\train_ticket` directory to your preferred web server.**
 
-4. **Compile and deploy the Java controllers and objects in `\NCU_MIS_SA\WEB-INF\classes\ncu\im3069\demo\controller` and `\NCU_MIS_SA\WEB-INF\classes\ncu\im3069\demo\app` respectively.**
+4. **Compile and deploy the Java controllers and objects in `\train_ticket\WEB-INF\classes\ncu\im3069\demo\controller` ,  `\train_ticket\WEB-INF\classes\ncu\im3069\demo\app`, and `\train_ticket\WEB-INF\classes\ncu\im3069\demo\util` respectively.**
 
 ## Usage
 

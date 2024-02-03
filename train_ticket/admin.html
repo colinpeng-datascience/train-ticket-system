@@ -2,90 +2,13 @@
 
 <html>
  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <link href="css/admin.css" rel="stylesheet">
  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<head>
-
- 
-<style>
-body {
-    font-family: "Lato", sans-serif;
-}
+ <script src="js/admin.js"></script>
+ <head>
 
 
-
-.main-head{
-    height: 150px;
-    background: #FFF;
-   
-}
-
-.sidenav {
-    height: 100%;
-    background-color: #000;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-
-.main {
-    padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-}
-
-@media screen and (max-width: 450px) {
-    .login-form{
-        margin-top: 10%;
-    }
-
-    .register-form{
-        margin-top: 10%;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .main{
-        margin-left: 40%; 
-    }
-
-    .sidenav{
-        width: 40%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-    }
-
-    .login-form{
-        margin-top: 80%;
-    }
-
-    .register-form{
-        margin-top: 20%;
-    }
-}
-
-
-.login-main-text{
-    margin-top: 20%;
-    padding: 60px;
-    color: #fff;
-}
-
-.login-main-text h2{
-    font-weight: 300;
-}
-
-.btn-black{
-    background-color: #000 !important;
-    color: #fff;
-}
-
-	
-</style>
 <title>MIS BUS</title>
 
 </head>
@@ -129,78 +52,7 @@ body {
                   <button type="button" class="btn btn-black" id="sub" >Submit</button>
                   
                   <button type="button" class="btn btn-secondary" id="can" >Cancel</button>
-               </form>
-               
-               
-               
-               
-	
-	
-	            <script type="text/javascript">
-                $(document).ready(function() {
-
-                    var $sub = $('#sub');
-                    $sub.click(function() {
-                        sub();
-                    });
-                    var $can = $('#can');
-                    $can.click(function(){
-                    	window.location.href = "home.html";
-                    });
-                    
-					function sub() {
-						
-                        var old_id = $('#old_id').val();
-                        var old_off = $('#old_off').val();
-                        var new_time = $('#new_time').val();
-                        var new_dep = $('#new_dep').val();
-                        var new_ari = $('#new_ari').val();
-                        var new_on = $('#new_on').val();
-                        
-                        
-
-                            var login_object = {
-                                "train_id": old_id,
-                                "off_date": old_off,
-                                "departure_time": new_time,
-                                "departure_station": new_dep,
-                                "arrival_station": new_ari,
-                                "on_date": new_on
-                                
-                                
-                            };
-
-
-                            var login_string = JSON.stringify(login_object);
-
-
-                            $.ajax({
-                                    type: "Post",
-                                    url: "api/admin.do",
-                                    data: login_string,
-                                    crossDomain: true,
-                                    cache: false,
-                                    dataType: 'json',
-                                    timeout: 5000,
-                                    success: function (response) {
-                                    		alert(response.message); 
-                                    		window.location.href = "timetable.html";
-                                    	}
-           
-                                    ,
-                                    error: function () {
-                                        alert("Connection error!");
-                                    }
-                             });
-                        }
-                        
-                        
-                        
-					
-                    
-
-                });
-            </script>		   
+               </form>   
             </div>
          </div>
       </div>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	      <!-- Bootstrap -->
-<link href="bootstrap-4.4.1.css" rel="stylesheet">
+<link href="statics/css/bootstrap-4.4.1.css" rel="stylesheet">
+<script src="js/timetable.js"></script>
   <head>
 
 
@@ -64,79 +65,11 @@
 	</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="statics/js/jquery-3.4.1.min.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed --> 
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="statics/js/popper.min.js"></script>
+    <script src="statics/js/bootstrap-4.4.1.js"></script>
   </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script type="text/javascript">
-
-  load_table();
-  
-  
-  function load_table(){
-
-
-              	  
-              $.ajax({
-                      type: "GET",
-                      url: "api/search.do",
-
-                      crossDomain: true,
-                      cache: false,
-                      dataType: 'json',
-                      timeout: 5000,
-                      success: function (response) {
-                    	  
-                          if(response.status == 200){
-                        	  console.log("search completed")
-                              updateTable(response.response.data);
-                          }
-
-                      },
-                      error: function () {
-                          alert("Connection error！");
-                      }
-              });
-          }
-  	  
-      
-      function updateTable(data) {
-          $("#table > tbody").empty();
-          var table_html = '';
-          $.each(data, function(index, value) {
-        	  
-              table_html += '<tr><td scope="row">' + value['train_id'] + '</td>';
-              table_html += '<td>' + value['departure'] + '</td>';
-              table_html += '<td>' + value['departure_time'] + '</td>';
-              table_html += '<td>' + value['arrival_time'] + '</td>';
-              table_html += '<td>' + value['off_date'] + '</td>';
-              table_html += '<td>' + value['on_date'] + '</td></tr>'; })
-
-          $("#table > tbody").append(table_html);
-      }
- 	 
-                  </script>
 </html>
